@@ -172,7 +172,7 @@
     <script type="text/javascript">
         var heads = $( 'h2[id^="feed-"]' ).hide(),
             i = 0;
-        $.getJSON( "http://www.reddit.com/r/all/.json?limit=10&jsonp=?", function ( data ) {
+        $.getJSON( "https://www.reddit.com/r/all/.json?limit=10&jsonp=?", function ( data ) {
             $.each( data.data.children, function ( i, item ) {
                 heads.eq( i ).text( item.data.title );                       
             });
