@@ -174,7 +174,7 @@
             i = 0;
         var rLinks = $( 'a[id^="link-"]' ),
             i = 0;
-        $.getJSON( "http://www.reddit.com/r/all/.json?limit=10&jsonp=?", function ( data ) {
+        $.getJSON( "https://www.reddit.com/r/all/.json?limit=10&jsonp=?", function ( data ) {
             $.each( data.data.children, function ( i, item ) {
                 rLinks.eq( i ).text( item.data.title );
                 rLinks.eq(i).attr( "href", item.data.url );                       
